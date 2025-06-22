@@ -8,7 +8,7 @@ namespace apisecurity.Repository
 {
     public class TokenRepository : ITokenRepository
     {
-        Dictionary<string,string> UserRecord = new Dictionary<string,string>()
+        Dictionary<string,string> UserRecord = new()
         {
             {"admin","admin"},
             {"password","password"}

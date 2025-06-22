@@ -27,7 +27,7 @@ namespace apisecurity
             {
                 var key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]);
                 o.SaveToken = true;
-                o.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                o.TokenValidationParameters = new TokenValidationParameters()
                 {
                     ValidateIssuer = false,
                     ValidateAudience = false,
